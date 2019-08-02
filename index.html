@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang=es>
+<head>
+<style>
+body,html{background-color:#000;color:#FFF;font-family:'Fredericka the Great',cursive;font-size:30px;display:grid;height:99%}
+h1{font-weight:100;margin:0;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}
+.container{height:99% !imporant}
+.pie{bottom:0;position:fixed;text-align:right;width:97%}
+#particles-js{position:fixed;z-index:50;width:100%;height:99%;top:0;left:0}
+</style>
+<!-- <link href='//fonts.googleapis.com/css?family=Fredericka+the+Great' rel=stylesheet type=text/css> -->
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<meta charset=utf-8>
+<title>orangeskullstudio.com</title>
+<meta name=description content="orangeskullstudio.com"/>
+<link rel=canonical href='//orangeskullstudio.com/' />
+<meta property=og:locale content='es_ES'/>
+<meta property=og:title content='orangeskullstudio.com -'/>
+<meta property=og:description content='orangeskullstudio.com'/>
+<meta property=og:url content='//orangeskullstudio.com/'/>
+<meta property=og:site_name content='orangeskullstudio.com'/>
+<meta property=og:type content='website'/>
+</head>
+<body>
+<div id="particles-js"></div>
+<div class="container">
+<h1>orangeskullstudio.com</h1>
+</div>
+<div class="pie">
+<p>2019</p>
+</div>
+<noscript id="deferred-styles">
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Fredericka+the+Great" media="none" onload="this.media='all';" />
+</noscript>
+<script>
+var loadDeferredStyles = function() {
+var addStylesNode = document.getElementById("deferred-styles");
+var replacement = document.createElement("div");
+replacement.innerHTML = addStylesNode.textContent;
+document.body.appendChild(replacement)
+addStylesNode.parentElement.removeChild(addStylesNode);
+};
+var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+else window.addEventListener('load', loadDeferredStyles);
+</script>
+<script src="//cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>particlesJS({"particles":{"number":{"value":200,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"grab"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":140,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});</script>
+</body>
+</html>
